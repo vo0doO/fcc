@@ -3,5 +3,5 @@ function smallestCommonsWithNamedForLoop(arr) {
 }
 
 module.exports = {
-    smallestCommonsWithNamedForLoop: smallestCommonsWithNamedForLoop
+    smallestCommonsWithNamedForLoop
 }
