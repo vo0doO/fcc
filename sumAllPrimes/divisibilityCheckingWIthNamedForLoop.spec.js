@@ -1,5 +1,5 @@
 const assert = require("assert");
-const divisibilityCheckingWithNamedForLoop = require("./divisibilityCheckingWithNamedForLoop");
+const { divisibilityCheckingWithNamedForLoop } = require("./divisibilityCheckingWithNamedForLoop");
 
 
 
