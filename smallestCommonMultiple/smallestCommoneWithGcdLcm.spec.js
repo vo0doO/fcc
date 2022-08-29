@@ -2,7 +2,9 @@ const assert = require("assert");
 const { smallestCommonsWithGcdLcm } = require("assert");
 
 describe("Smallest common multiple", () => {
+
     describe("With GCD LCM", () => {
+        
         it("smallestCommonsWithGcdLcm([1, 5]) должен вернуть номер", () => {
             assert.equal("number", typeof smallestCommonsWithGcdLcm([1, 5]))
         })
