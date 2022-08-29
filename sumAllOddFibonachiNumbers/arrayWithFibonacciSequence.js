@@ -10,5 +10,5 @@ function arrayWithFibonacciSequence(num) {
 }
 
 module.exports = {
-    arrayWithFibonacciSequence: arrayWithFibonacciSequence
+    arrayWithFibonacciSequence
 }
