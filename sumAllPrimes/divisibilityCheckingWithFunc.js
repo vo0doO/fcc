@@ -18,9 +18,8 @@ function divisibilityCheckingWithFunc(num) {
     }
 
     return sum
-
 }
 
 module.exports = {
-    divisibilityCheckingWithFunc: divisibilityCheckingWithFunc
+    divisibilityCheckingWithFunc
 }

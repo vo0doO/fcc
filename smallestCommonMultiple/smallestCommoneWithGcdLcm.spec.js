@@ -16,7 +16,7 @@ describe("Smallest common multiple", () => {
             assert.equal(2520, smallestCommonsWithGcdLcm([2, 10]))
         })
         it("smallestCommonsWithGcdLcm([1, 13]) должен вернуть 360360", () => {
-            assert.equal(360360, smallestCommonsWithGcdLcm([1, 13]))
+            assert.equal(360360, csmallestCommonsWithGcdLcm([1, 13]))
         })
         it("smallestCommonsWithGcdLcm([23, 18]) должен вернуть 6056820", () => {
             assert.equal(6056820, smallestCommonsWithGcdLcm([23, 18]))
