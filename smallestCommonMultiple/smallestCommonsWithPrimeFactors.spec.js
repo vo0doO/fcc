@@ -3,7 +3,7 @@ const { smallestCommonsWithPrimeFactors } = require("./smallestCommonsWithPrimeF
 
 describe("Smallest common multiple", () => {
 
-    describe("With GCD LCM", () => {
+    describe("With Prime Factors", () => {
         
         it("smallestCommonsWithPrimeFactors([1, 5]) должен вернуть номер", () => {
             assert.equal("number", typeof smallestCommonsWithPrimeFactors([1, 5]))
