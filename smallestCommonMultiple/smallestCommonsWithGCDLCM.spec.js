@@ -1,5 +1,5 @@
 const assert = require("assert");
-const { smallestCommonsWithGCDLCM } = require("./smallestCommonWithGCDLCM");
+const { smallestCommonsWithGCDLCM } = require("./smallestCommonsWithGCDLCM");
 
 describe("Smallest common multiple", () => {
 

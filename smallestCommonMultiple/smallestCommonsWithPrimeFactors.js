@@ -12,7 +12,7 @@ function smallestCommonsWithPrimeFactors(arr) {
         }
     }
     for (let i in factors) {
-        result *= i ** factors
+        result *= i ** factors[i]
     }
     return result 
 }
