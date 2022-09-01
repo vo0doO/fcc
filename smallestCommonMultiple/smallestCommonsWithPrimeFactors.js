@@ -5,17 +5,14 @@ function smallestCommonsWithPrimeFactors(arr) {
     var result = 1
     for (let i = min; i <= max; i++) {
         let factor = getPrimeFactors(i)
-        for (let [k, v] of Object.entries(factor)) {
-            if (!factors[k]) {
-                factors[k] = v;
-            }
-            if (factors[k] && factors[k] < v) {
-                factors[k] = v
+        for (let j in factor) {
+            if (!factors[j] || factor[j] > factors[j]) {
+                factors[j] = factor[j]
             }
         }
     }
-    for (let [k, v] of Object.entries(factors)) {
-        result *= Math.pow(k ,v)
+    for (let i in factors) {
+        result *= i ** factors
     }
     return result 
 }
