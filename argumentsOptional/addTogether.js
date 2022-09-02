@@ -3,12 +3,13 @@ function addTogether() {
     if (!Number.isInteger(a)) {
         return undefined
     }
-    if (arguments.length > 1) {
-        return Number.isInteger(a) && Number.isInteger(b) ? a + b : undefined
+    if (arguments.length == 1) {
+        return (b) => addTogether(a, b)
     }
-    return function() {
-            return Number.isInteger(a) && Number.isInteger(arguments[0]) ? a + arguments[0] : undefined
+    if (!Number.isInteger(b)) {
+        return undefined
     }
+    return a + b
 }
 
 
