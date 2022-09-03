@@ -1,4 +1,4 @@
-const assert = require("asserts");
+const assert = require("assert");
 const { orbitalPeriod } = require("./orbitalPeriod");
 
 
