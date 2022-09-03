@@ -20,7 +20,6 @@ const Person = function (firstAndLast) {
     this.setFullName = function (firstAndLast) {
         [firstName, lastName] = firstAndLast.split(" ")
     }
-    return firstAndLast
 };
 
 
