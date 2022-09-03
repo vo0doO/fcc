@@ -1,7 +1,6 @@
 function palindrome(str) {
-    const cleanStr = str.replace(/[^\w]|_/g, "").toLowerCase()
-    const palindromeStr = cleanStr.split("").reverse().join("")
-    return cleanStr == palindromeStr
+    const cleanStrArr = str.toLowerCase().match(/[a-z0-9]/g)
+    return cleanStrArr.join("") == cleanStrArr.reverse().join("")
 }
 
 
