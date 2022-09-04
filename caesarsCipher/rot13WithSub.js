@@ -1,13 +1,13 @@
 function rot13WithSub(str) {
     const sub = 'NOPQRSTUVWXYZABCDEFGHIJKLM[\\]^_`nopqrstuvwxyzabcdefghijklm'
-    let res = []
-    for (let i = 0; i < str.split("").length; i++) {
-        if (65 > str.charCodeAt(i) || str.charCodeAt(i) > 122) {
-            res.push(str[i])
+    return String.fromCharCode(...str.split("").map(
+        (i) => {
+            if (65 > i.charCodeAt(0) || i.charCodeAt(0) > 122) {
+                return i.charCodeAt(0)
+            }
+            return sub[i.charCodeAt(0) - 65].charCodeAt(0)
         }
-        res.push(sub[str.charCodeAt(i) - 65])
-    }
-    return res.join("")
+    ))
 }
 
 
