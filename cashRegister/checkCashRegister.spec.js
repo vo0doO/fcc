@@ -1,5 +1,5 @@
 const assert = require("assert");
-const checkCashRegister = require("./checkCashRegister");
+const { checkCashRegister } = require("./checkCashRegister");
 
 
 describe("Cash Register", () => {
