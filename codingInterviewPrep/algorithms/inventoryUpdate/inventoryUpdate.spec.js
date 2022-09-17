@@ -3,7 +3,7 @@ const { inventoryUpdate } = require('./inventoryUpdate')
 
 describe("Inventory Update", () => {
     it("Функция inventoryUpdate должна возвращать массив", () => {
-        assert.deepEqual(true, inventoryUpdate() instanceof Array)
+        assert.deepEqual(true, inventoryUpdate([[21, "Bowling Ball"], [2, "Dirty Sock"], [1, "Hair Pin"], [5, "Microphone"]], [[2, "Hair Pin"], [3, "Half-Eaten Apple"], [67, "Bowling Ball"], [7, "Toothpaste"]]) instanceof Array)
     })
     it('inventoryUpdate([[21, "Bowling Ball"], [2, "Dirty Sock"], [1, "Hair Pin"], [5, "Microphone"]], [[2, "Hair Pin"], [3, "Half-Eaten Apple"], [67, "Bowling Ball"], [7, "Toothpaste"]]) должен возвращать массив длиной 6', () => {
         assert.equal(6, inventoryUpdate([[21, "Bowling Ball"], [2, "Dirty Sock"], [1, "Hair Pin"], [5, "Microphone"]], [[2, "Hair Pin"], [3, "Half-Eaten Apple"], [67, "Bowling Ball"], [7, "Toothpaste"]]).length)
