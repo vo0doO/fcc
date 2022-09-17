@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node_modules/.bin/mocha cashRegister/*.spec.js --diff=false --watch cashRegister/*.js",
+    "start": "node_modules/.bin/mocha codingInterviewPrep/algorithms/findTheSymmetricDifference/*.spec.js --diff=false --watch codingInterviewPrep/algorithms/findTheSymmetricDifference/*.js",
     "test": "node_modules/.bin/mocha --diff=false --watch"
   },
   "author": "",
