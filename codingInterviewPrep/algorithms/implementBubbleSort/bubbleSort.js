@@ -1,5 +1,5 @@
 function bubbleSort(array) {
-    let n = 0 // объявляем счетчик n
+    let n = 0 // объявляем счетчик количества итераций n
     while (array.length > n) { // пока n меньше длины мыссива
         for (let i = 0; i < array.length - 1 - n; i++) { // для i = 0, i + 1, i + 2... не более длины масива - 1 - n
             if (array[i] > array[i + 1]) { // если i-ое значение, больше значения по индексу i + 1
