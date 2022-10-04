@@ -4,7 +4,7 @@ const { quickSort } = require('./quickSort')
 
 
 const sortFunc = (a, b) => a - b
-const filePath = "codingInterviewPrep/algorithms/implementQuickSort/quickSort.spec.js"
+const filePath = "codingInterviewPrep/algorithms/implementQuickSort/quickSort.js"
 
 describe('Implements Quick Sort', () => {
     it('quickSort должна быть функция', () => {
