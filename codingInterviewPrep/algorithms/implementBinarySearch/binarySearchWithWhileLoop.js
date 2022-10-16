@@ -1,23 +1,20 @@
-function binarySearchWithWhileLoop(array, number) {
+function binarySearchWithWhileLoop(arr, key) {
+    let low = 0
+    let high = arr.length - 1
     let result = []
-    let lowIndex = 0
-    let highIndex = array.length - 1
-    while (lowIndex <= highIndex) {
-
-        let middleIndex = Math.floor((lowIndex + (lowIndex - highIndex)) / 2)
-        let middleValue = array[middleIndex]
-
-        if (middleValue < number) {
-            lowIndex = middleIndex + 1
-            result.push(array[middleIndex])
+    while (low <= high) {                         
+        let mid = Math.floor((low + (high-low)/2))                                          
+        let midVal = arr[mid]
+        if (midVal < key) {
+            result.push(midVal)
+            low = mid + 1
         }
-
-        else if (middleValue > number) {
-            highIndex = middleIndex - 1
-            result.push(array[middleIndex])
+        else if (midVal > key) {                      
+            result.push(midVal)
+            high = mid - 1
         }
         else {
-            result.push(array[middleIndex])
+            result.push(midVal)
             return result
         }
     }
