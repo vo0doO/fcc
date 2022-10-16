@@ -9,7 +9,6 @@ function binarySearch(array, number, result = []) {
         return "Value Not Found" // возвращаем результат
     }
     let middleIndex = Math.floor(array.length / 2) // находим индекс центрального элемента
-    if (middleIndex % 2) { }
     let middleValue = array[middleIndex - 1] // записываем центральное значение в переменную
     // второй базовый случай
     if (middleValue == number) { // если центральное значение равно искомому значению
