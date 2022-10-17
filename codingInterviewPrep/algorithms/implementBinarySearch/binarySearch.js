@@ -19,8 +19,8 @@ function binarySearch(array, number, result, low, high) {
      * добавляем его в результат и возвращаем результат
      */
     if (midVal == number) {
-        result.push(number)  
-        return result  
+        result.push(number)
+        return result
     }
 
     /** 
@@ -30,10 +30,10 @@ function binarySearch(array, number, result, low, high) {
      * Если центральное значение больше искомого
      * то повторяем все с левой частью, иначе с правой
     */
-    result.push(midVal) 
+    result.push(midVal)
     let left = array.slice(0, mid)
-    let right = array.slice(mid+1)
-    return (midVal > number) ? 
+    let right = array.slice(mid + 1)
+    return (midVal > number) ?
         binarySearch(left, number, result, 0, left.length - 1) :
         binarySearch(right, number, result, 0, right.length - 1)
 }
